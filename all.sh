@@ -343,7 +343,7 @@ install_docker_env() {
     install_docker_compose() {
         LOG_INFO "安装Docker Compose..."
         
-        primary_url="https://nb.sb/shell/docker-compose-Linux-x86_64"
+        primary_url="https://ghproxy.cc/https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)"
         backup_url="https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)"
         
         # 使用-f选项，并检查curl命令的返回状态
@@ -1272,5 +1272,3 @@ else
     # check_command docker
     select_install_option
 fi
-
-
