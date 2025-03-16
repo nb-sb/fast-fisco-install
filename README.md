@@ -6,5 +6,9 @@
 
 使用一键部署链接体验
 ```
-wget --no-check-certificate  -O all.sh https://nb.sb/shell/all.sh &&  source all.sh
+wget --no-check-certificate  -O all.sh https://raw.githubusercontent.com/nb-sb/fast-fisco-install/refs/heads/main/all.sh &&  source all.sh
+```
+国内使用：
+```
+wget --no-check-certificate  -O all.sh https://gitee.com/nb-sb/fast-fisco-install/raw/main/all.sh &&  source all.sh
 ```

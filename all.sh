@@ -426,7 +426,7 @@ install_docker_env() {
     if [ $"$docker_install_success" ]; then
         LOG_INFO "正在配置docker镜像源"
         sudo mkdir -p /etc/docker
-        sudo sh -c 'echo "{\"registry-mirrors\": [\"https://kuamavit.mirror.aliyuncs.com\", \"https://registry.docker-cn.com\", \"https://docker.mirrors.ustc.edu.cn\"]}" > /etc/docker/daemon.json'
+        sudo sh -c 'echo "{\"registry-mirrors\": [\"https://docker.1ms.run\"]}" > /etc/docker/daemon.json'
         sudo systemctl daemon-reload
         sudo systemctl restart docker
     else

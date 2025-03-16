@@ -23,8 +23,8 @@ install_caliper(){
                 LOG_INFO "🥵 ✔✔✔ 文件 $2 已存在，跳过下载"
             fi
                 }
-        download_if_not_exists "https://nb.sb/shell/caliper/node_modules.zip" "node_modules.zip"
-        download_if_not_exists "https://nb.sb/shell/caliper/caliper-benchmarks.zip" "caliper-benchmarks.zip"
+        download_if_not_exists "https://gitee.com/nb-sb/fast-fisco-install/raw/main/caliper/node_modules.zip" "node_modules.zip"
+        download_if_not_exists "https://gitee.com/nb-sb/fast-fisco-install/raw/main/caliper/caliper-benchmarks.zip" "caliper-benchmarks.zip"
 
     else
         LOG_INFO "caliper已安装，版本：$caliper_version"
@@ -38,8 +38,8 @@ install_caliper(){
                    LOG_INFO "🥵 ✔✔✔ 文件 $2 已存在，跳过下载"
                 fi
             }
-            download_if_not_exists "https://nb.sb/shell/caliper/node_modules.zip" "node_modules.zip"
-            download_if_not_exists "https://nb.sb/shell/caliper/caliper-benchmarks.zip" "caliper-benchmarks.zip"
+            download_if_not_exists "https://github.com/nb-sb/fast-fisco-install/raw/main/caliper/node_modules.zip" "node_modules.zip"
+            download_if_not_exists "https://github.com/nb-sb/fast-fisco-install/raw/main/caliper/caliper-benchmarks.zip" "caliper-benchmarks.zip"
         else
             LOG_ERROR "😋取消安装caliper "
         fi
