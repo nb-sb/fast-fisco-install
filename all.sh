@@ -981,7 +981,7 @@ print_environment_info() {
 
 # 主菜单
 show_menu() {
-    content=$(wget --no-check-certificate -qO- https://nb.sb/shell/version.txt)
+    content=$(wget --no-check-certificate -qO- https://gitee.com/nb-sb/fast-fisco-install/raw/main/version.txt)
     # echo "$content"
     echo -e "\033[32m
 *************************************************************************************************************************
@@ -1014,11 +1014,11 @@ show_menu() {
     echo -e "\033[32m
     ============================
     注：使用的时候请直接拉取当前最新版脚本，以确保安装过程的正确，建议直接使用这行命令
-    当前版本：4.3
+    当前版本：4.4
    $YELLOW 最新版：$content $NC
-    =      当前版本的更新时间 : 2023-12-1 9:39
+    =      当前版本的更新时间 : 2025-3-16 20:09
     安装命令最新版本命令：
-    wget --no-check-certificate  -O all.sh https://nb.sb/shell/all.sh &&  source all.sh
+    wget --no-check-certificate  -O all.sh https://gitee.com/nb-sb/fast-fisco-install/raw/main/all.sh &&  source all.sh
 	调用方法： source all.sh 或 bash all.sh
     ============================
     \033[0m"
